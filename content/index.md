@@ -14,8 +14,6 @@ views:
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
-
 Hej på er!
 
 [FIGURE src="image/me.jpg?w=350" class="left" caption="Bild på mig"]
