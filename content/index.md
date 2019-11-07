@@ -18,7 +18,7 @@ Detta innehåll är skrivet i markdown och du hittar innehållet i filen `conten
 
 Hej på er!
 
-[FIGURE src="image/me.jpg?w=350" class="right" caption="Bild på mig"]
+[FIGURE src="image/me.jpg?w=350" class="left" caption="Bild på mig"]
 
 Jag heter Linnea Blad, är 21 år gammal och bor i Lidköping med mina föräldrar, vår hund, katt och 7 undulater. Jag läste hela gymnasiet på distans via Korrespondensgymnasiet i Torsås och trivdes bra med det. Det var befriande att kunna planera sina studier helt fritt. Det hade dock varit ensamt om jag inte hade haft min hund så jag är glad att jag har henne. Teknik, biologi, kemi och fysik har alltid varit stora intressen för mig.
 
