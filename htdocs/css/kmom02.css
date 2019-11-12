@@ -1,9 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom01.
+ * Stylesheet for design kmom02.
  *
- * This stylesheet is for the design course and kmom01. Its intention is to
- * use kmom01.css and lessify the style and use this as a wrapper for the new
- * style.
+ * This stylesheet is for the design course and kmom02 where we use LESS.
  */
 /**
  * Internal self contained modules, save in directory module/.
@@ -31,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #d9d9d9;
+  background-color: #ddd;
   font: 100.01%/1 sans-serif;
 }
 p {
@@ -176,6 +174,20 @@ h1 {
 .site-footer {
   text-align: center;
   clear: both;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+* {
+  margin: 0;
+  padding: 0;
 }
 /**
  * Layout for responsive style through media queries.
