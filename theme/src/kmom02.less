@@ -5,6 +5,15 @@
 */
 
 /**
+ * Import mixins
+ */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+/**
  * Normalize and reset the style.
  */
 @import "normalize.css/normalize.less";
@@ -23,6 +32,10 @@
  */
 //@import "module/kmom01.less";
 @import "module/stylechooser.less";  // Just an example module
+
+
+
+
 
 
 
@@ -48,7 +61,7 @@
  * A responsive menu.
  */
 @import "@desinax/responsive-menu/less/responsive-menu.less";
-@import "@desinax/responsive-menu/less/media-queries.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
 
 
 /**

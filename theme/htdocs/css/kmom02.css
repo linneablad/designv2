@@ -4,6 +4,13 @@
 * This stylesheet is for the design course and kmom02 where we use LESS.
 */
 /**
+ * Import mixins
+ */
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+ */
+/**
  * Normalize and reset the style.
  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -4753,12 +4760,19 @@ body {
   background-color: #ddd;
   font: 100.01%/1 sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 p {
   margin: 10px 0;
   font-size: 18px;
 }
 h1 {
   font-size: 25px;
+}
+img {
+  max-width: 100%;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -4846,9 +4860,6 @@ h1 {
 .my-navbar li {
   display: inline;
 }
-.my-navbar a:hover {
-  text-decoration: underline;
-}
 /* Images */
 .left {
   float: left;
@@ -4894,11 +4905,46 @@ h1 {
 /**
  * General layout
  */
+.outer-wrap-header {
+  background-color: #92bcc4;
+}
+.outer-wrap-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.inner-wrap-header {
+  max-width: 100%;
+}
+.region-header-col-1 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  margin: 0;
+}
+.region-header-col-2 {
+  float: left;
+  width: 80%;
+  text-align: center;
+}
+.region-header-col-3 {
+  float: left;
+  width: 10%;
+}
+.site-logo-text-icon {
+  display: none;
+}
+.outer-wrap-flash {
+  margin: 30px 0 0;
+}
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
-  .site-logo {
+/**
+ * Navbar
+ */
+@media screen and (max-width: 750px) {
+  .rm-desktop {
     display: none;
   }
 }
@@ -5160,25 +5206,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
-}
-/**
- * Style for responsive menu
- */
-/**
-  * Example on media queries
-  */
-@media screen and (max-width: 680px) {
-  .rm-small {
-    display: block;
-  }
-  .rm-desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 680px) {
-  .rm-small {
-    display: none;
-  }
 }
 /**
  * My own settings, not currently in their own module.
