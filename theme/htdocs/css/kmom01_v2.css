@@ -22,7 +22,9 @@
  */
 /**
  * Base style to affect HTML elements on a general scale.
- */
+*/
+/* Variables */
+/* Mixins */
 html {
   overflow-y: scroll;
   background-color: #424242;
@@ -38,15 +40,29 @@ body {
   margin: 0;
   padding: 0;
 }
+a,
+a:visited {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
 p {
   margin: 10px 0;
   font-size: 18px;
 }
 h1 {
-  font-size: 25px;
+  font-size: 30px;
+  margin-top: 0;
+  border-bottom: 2px solid #1b2e32;
+}
+h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #1b2e32;
 }
 img {
   max-width: 100%;
+  border-radius: 3px;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -74,14 +90,16 @@ img {
   color: inherit;
 }
 .region-header-col-1 {
-  float: left;
   width: 30%;
   margin-right: 10px;
   font-size: 30px;
 }
 .region-header-col-2 {
-  float: left;
   width: 60%;
+}
+.region-header-col-1,
+.region-header-col-2 {
+  float: left;
 }
 .site-logo {
   display: none;
@@ -94,45 +112,44 @@ img {
 }
 /* Main */
 .inner-wrap-main {
-  padding: 30px 0;
+  padding: 10px 0;
   min-height: 45em;
-}
-.has-sidebar {
-  width: 66%;
-  float: left;
 }
 .next {
   text-align: right;
-  width: 50%;
   float: right;
-  margin: 20px 0;
 }
+.next,
 .previous {
   width: 50%;
+  margin: 0 0 20px;
+}
+.previous,
+.has-sidebar,
+.region-sidebar-right,
+.region-sidebar-left {
   float: left;
-  margin: 20px 0;
+}
+.has-sidebar {
+  width: 66%;
 }
 .region-sidebar-right {
-  float: left;
   width: 30%;
-  margin-left: 3%;
+  margin: 0 0 0 3%;
 }
 .region-sidebar-right .block {
   margin-bottom: 30px;
 }
+.region-sidebar-left {
+  width: 30%;
+  margin-right: 3%;
+}
+.region-sidebar-left ul,
 .breadcrumb-list ul {
   list-style: none;
 }
 .breadcrumb-list li {
   display: inline;
-}
-.region-sidebar-left {
-  float: left;
-  width: 30%;
-  margin-right: 3%;
-}
-.region-sidebar-left ul {
-  list-style: none;
 }
 /* Images */
 .left {
@@ -146,7 +163,7 @@ img {
 /* Byline */
 .author-byline {
   overflow: auto;
-  width: 700px;
+  max-width: 100%;
   clear: both;
   margin: 30px 0;
   padding: 10px;
@@ -155,6 +172,9 @@ img {
 /* Footer */
 .outer-wrap-footer {
   background-color: rgba(66, 65, 68);
+}
+.outer-wrap-footer,
+.site-footer {
   clear: both;
 }
 .inner-wrap-footer {
@@ -167,17 +187,38 @@ img {
 }
 .site-footer {
   text-align: center;
-  clear: both;
 }
 /**
  * Layout for responsive style through media queries.
  */
 /**
- * Navbar
- */
+* Main
+*/
+@media screen and (max-width: 1100px) {
+  .inner-wrap-main {
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 750px) {
+  /**
+     * Navbar
+     */
   .rm-desktop {
     display: none;
+  }
+  /**
+     * Sidebars
+     */
+  .has-sidebar,
+  .region-sidebar-right,
+  .region-sidebar-left,
+  .footer-column {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .region-sidebar-left {
+    margin-bottom: 30px;
   }
 }
 /**

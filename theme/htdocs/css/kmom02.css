@@ -4748,31 +4748,47 @@ template {
  */
 /**
  * Base style to affect HTML elements on a general scale.
- */
+*/
+/* Variables */
+/* Mixins */
 html {
   overflow-y: scroll;
-  background-color: #424242;
+  background-color: #eef5f6;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #ddd;
+  background-color: #eef5f6;
   font: 100.01%/1 sans-serif;
 }
 * {
   margin: 0;
   padding: 0;
 }
+a,
+a:visited {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
 p {
   margin: 10px 0;
   font-size: 18px;
 }
 h1 {
-  font-size: 25px;
+  font-size: 30px;
+  margin-top: 0;
+  border-bottom: 2px solid #1b2e32;
+}
+h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #1b2e32;
 }
 img {
   max-width: 100%;
+  border-radius: 3px;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -4800,14 +4816,16 @@ img {
   color: inherit;
 }
 .region-header-col-1 {
-  float: left;
   width: 30%;
   margin-right: 10px;
   font-size: 30px;
 }
 .region-header-col-2 {
-  float: left;
   width: 60%;
+}
+.region-header-col-1,
+.region-header-col-2 {
+  float: left;
 }
 .site-logo {
   display: none;
@@ -4820,45 +4838,44 @@ img {
 }
 /* Main */
 .inner-wrap-main {
-  padding: 30px 0;
+  padding: 10px 0;
   min-height: 45em;
-}
-.has-sidebar {
-  width: 66%;
-  float: left;
 }
 .next {
   text-align: right;
-  width: 50%;
   float: right;
-  margin: 20px 0;
 }
+.next,
 .previous {
   width: 50%;
+  margin: 0 0 20px;
+}
+.previous,
+.has-sidebar,
+.region-sidebar-right,
+.region-sidebar-left {
   float: left;
-  margin: 20px 0;
+}
+.has-sidebar {
+  width: 66%;
 }
 .region-sidebar-right {
-  float: left;
   width: 30%;
-  margin-left: 3%;
+  margin: 0 0 0 3%;
 }
 .region-sidebar-right .block {
   margin-bottom: 30px;
 }
+.region-sidebar-left {
+  width: 30%;
+  margin-right: 3%;
+}
+.region-sidebar-left ul,
 .breadcrumb-list ul {
   list-style: none;
 }
 .breadcrumb-list li {
   display: inline;
-}
-.region-sidebar-left {
-  float: left;
-  width: 30%;
-  margin-right: 3%;
-}
-.region-sidebar-left ul {
-  list-style: none;
 }
 /* Images */
 .left {
@@ -4872,7 +4889,7 @@ img {
 /* Byline */
 .author-byline {
   overflow: auto;
-  width: 700px;
+  max-width: 100%;
   clear: both;
   margin: 30px 0;
   padding: 10px;
@@ -4881,6 +4898,9 @@ img {
 /* Footer */
 .outer-wrap-footer {
   background-color: rgba(66, 65, 68);
+}
+.outer-wrap-footer,
+.site-footer {
   clear: both;
 }
 .inner-wrap-footer {
@@ -4893,7 +4913,6 @@ img {
 }
 .site-footer {
   text-align: center;
-  clear: both;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -4902,6 +4921,7 @@ img {
 /**
  * Variables
  */
+/* Mixins */
 /**
  * General layout
  */
@@ -4918,27 +4938,53 @@ img {
   max-width: 100%;
 }
 .region-header-col-1 {
-  float: left;
-  width: 10%;
   padding: 10px;
 }
+.region-header-col-1,
+.region-header-col-3 {
+  width: 10%;
+}
 .region-header-col-2 {
-  float: left;
   width: 80%;
   text-align: center;
 }
 .region-header-col-3 {
   float: left;
-  width: 10%;
 }
 .site-logo-text-icon {
   display: none;
 }
 .outer-wrap-flash {
-  margin: 30px 0 0;
+  margin: 20px 0;
 }
 /* Main */
+.article {
+  clear: both;
+}
+.inner-wrap-main {
+  overflow: auto;
+}
+/* Sidebars */
+.wrap-sidebar .block {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 1px 2px 5px #888;
+  border-radius: 3px;
+}
+.region-sidebar-left li {
+  padding: 10px 0;
+}
+.region-sidebar-left li a {
+  text-decoration: none;
+}
+.region-sidebar-left li a:hover {
+  text-decoration: underline;
+}
 /* Byline */
+.author-byline {
+  box-shadow: 1px 2px 5px #888;
+  border-radius: 3px;
+}
 /* Footer */
 .outer-wrap-footer {
   background-color: #1b2e32;
@@ -4949,18 +4995,40 @@ img {
 .outer-wrap-footer a:visited {
   color: #cde0e4;
 }
-.outer-wrap-footer a:hover {
-  text-decoration: none;
+.footer-column h4 {
+  border-bottom: 1px solid #cde0e4;
 }
 /**
  * Layout for responsive style through media queries.
  */
 /**
- * Navbar
- */
+* Main
+*/
+@media screen and (max-width: 1100px) {
+  .inner-wrap-main {
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 750px) {
+  /**
+     * Navbar
+     */
   .rm-desktop {
     display: none;
+  }
+  /**
+     * Sidebars
+     */
+  .has-sidebar,
+  .region-sidebar-right,
+  .region-sidebar-left,
+  .footer-column {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .region-sidebar-left {
+    margin-bottom: 30px;
   }
 }
 /**

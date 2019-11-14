@@ -1,10 +1,18 @@
 /**
  * Base style to affect HTML elements on a general scale.
- */
+*/
+
+/* Variables */
 @bgColorHtml: #424242;
 @bgColorBody: #d9d9d9;
 @colorBody: #333;
 @fontFamilyBody: sans-serif;
+
+/* Mixins */
+.border-bottom() {
+    border-bottom: 2px solid #1b2e32;
+}
+
 
 html {
     overflow-y: scroll;
@@ -24,15 +32,32 @@ body {
     padding: 0;
 }
 
+a,
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 p {
     margin: 10px 0;
     font-size: 18px;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 0;
+    .border-bottom();
+}
+
+h4 {
+    font-size: 20px;
+    .border-bottom();
 }
 
 img {
     max-width: 100%;
+    border-radius: 3px;
 }

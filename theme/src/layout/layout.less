@@ -39,15 +39,18 @@
 }
 
 .region-header-col-1 {
-    float: left;
     width: 30%;
     margin-right: 10px;
     font-size: 30px;
 }
 
 .region-header-col-2 {
-    float: left;
     width: 60%;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    float: left;
 }
 
 .site-logo {
@@ -66,54 +69,53 @@
 
 /* Main */
 .inner-wrap-main {
-    padding: 30px 0;
+    padding: 10px 0;
     min-height: 45em;
-}
-
-.has-sidebar {
-    width: 66%;
-    float: left;
 }
 
 .next {
     text-align: right;
-    width: 50%;
     float: right;
-    margin: 20px 0;
 }
 
+.next,
 .previous {
     width: 50%;
+    margin: 0 0 20px;
+}
+
+.previous,
+.has-sidebar,
+.region-sidebar-right,
+.region-sidebar-left {
     float: left;
-    margin: 20px 0;
+}
+
+.has-sidebar {
+    width: 66%;
 }
 
 .region-sidebar-right {
-    float: left;
     width: 30%;
-    margin-left: 3%;
+    margin: 0 0 0 3%;
 }
 
 .region-sidebar-right .block {
     margin-bottom: 30px;
 }
 
+.region-sidebar-left {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.region-sidebar-left ul,
 .breadcrumb-list ul {
     list-style: none;
 }
 
 .breadcrumb-list li {
     display: inline;
-}
-
-.region-sidebar-left {
-    float: left;
-    width: 30%;
-    margin-right: 3%;
-}
-
-.region-sidebar-left ul {
-    list-style: none;
 }
 
 
@@ -134,7 +136,7 @@
 /* Byline */
 .author-byline {
     overflow: auto;
-    width: 700px;
+    max-width: 100%;
     clear: both;
     margin: 30px 0;
     padding: 10px;
@@ -146,6 +148,10 @@
 /* Footer */
 .outer-wrap-footer {
     background-color: rgba(66, 65, 68);
+}
+
+.outer-wrap-footer,
+.site-footer {
     clear: both;
 }
 
@@ -161,5 +167,4 @@
 
 .site-footer {
     text-align: center;
-    clear: both;
 }
