@@ -1,6 +1,19 @@
 Revision history
 ==================
 
+v2.0.0 (2019-11-14)
+--------------------
+
+* Added text for Redovisning kmom02
+* Added style for the main-element
+* Added style for footer
+* Added style for header
+* Imported modules
+* Created kmom02-theme files
+* Prepared for kmom02 theme
+* Added images
+
+
 v1.0.1 (2019-11-07)
 --------------------
 
