@@ -32,4 +32,4 @@ Denna webbsida är skapad som en del av kursen *Teknisk webbdesign och användba
 
 Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-[FIGURE src=image/colors.jpg?width=726 caption="En bild som jag tycker representerar kursen"]
+[FIGURE src=image/colors.jpg?width=730 caption="En bild som jag tycker representerar kursen"]
