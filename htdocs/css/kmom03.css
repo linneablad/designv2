@@ -4840,7 +4840,7 @@ template {
   margin-left: auto;
   max-width: 1100px;
 }
-.outer-wrap {
+.wrap-all {
   overflow-x: hidden;
 }
 .vgrid .inner-wrap {
@@ -4866,10 +4866,6 @@ template {
 /* Header */
 .outer-wrap-header {
   background-color: #92bcc4;
-  overflow-y: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
 }
 .outer-wrap-header a {
   text-decoration: none;
@@ -4883,8 +4879,9 @@ template {
   max-width: 100%;
 }
 .region-header-col-1 {
-  font-size: 2.5em;
-  padding-left: 0.25em;
+  font-size: 3em;
+  padding: 0.25em 0 0.25em 0.25em;
+  font-family: 'Parisienne', Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -4901,6 +4898,9 @@ template {
   width: 65.625%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+.rm-navbar {
+  padding-top: 1.5em;
 }
 .site-logo,
 .site-logo-text-icon {
@@ -5022,7 +5022,7 @@ template {
 .outer-wrap-footer {
   background-color: #1b2e32;
   color: #cde0e4;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 .outer-wrap-footer,
 .site-footer {
@@ -5047,11 +5047,13 @@ template {
   border-bottom: 1px solid #cde0e4;
 }
 /* Responsivity */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   /* Header */
   .region-header-col-1 {
     padding-left: 0;
   }
+}
+@media screen and (max-width: 900px) {
   /**
      * Navbar
      */
@@ -5345,19 +5347,18 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Base style to affect HTML elements on a general scale.
 */
 /* Variables */
-@font FamilyBody: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif:;
 /* Mixins */
 html {
   overflow-y: scroll;
   background-color: #1b2e32;
 }
 body {
-  font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Quicksand', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #eef5f6;
-  font: 18px/1.33333333 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  font: 18px/1.33333333 'Raleway', 'Quicksand', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 * {
   margin: 0;
