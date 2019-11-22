@@ -1,6 +1,16 @@
 Revision history
 ==================
 
+v3.0.0 (2019-11-21)
+--------------------
+
+* Added text for Redovisning kmom03
+* Decided which font families to use
+* Added responsivity using the vertical grid
+* Created a typographic grid
+* Created a vertical grid
+
+
 v2.0.0 (2019-11-14)
 --------------------
 
