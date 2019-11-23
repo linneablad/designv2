@@ -59,6 +59,20 @@ return [
             ],
         ],
         [
+            "text" => "Rapporter",
+            "url" => "rapport",
+            "title" => "Rapporter",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Färgval för webbplatser inom smyckesbranschen",
+                        "url" => "rapport/fargschema",
+                        "title" => "Färgval för webbplatser inom smyckesbranschen",
+                    ],
+                ],
+            ],
+        ],
+        [
             "text" => "Om",
             "url" => "om",
             "title" => "Om denna webbplats.",
