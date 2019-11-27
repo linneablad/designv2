@@ -1,0 +1,153 @@
+/*!
+* Dark style for design kmom04.
+*
+* This is a dark style for the website.
+*/
+
+/**
+ * Import mixins
+ */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+
+
+/* Import font-families */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/layout_kmom04.less";
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/base_kmom04.less";
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 18px; //16px;
+
+// Default font-families
+@fontFamilyLogo: 'Bungee Inline', cursive;
+@fontFamilyHeadings: 'Suez One', @fontFamilyTimes;
+@fontFamilyBody: 'Roboto Condensed', @fontFamilyHelvetica;
+@fontFamilyCode: @fontFamilyCourier;
+
+// Background colors
+@bgColorHtml: #000;
+@bgColorBody: #262626;
+@bgColorHeader: #000;
+@bgColorBlock: #334d45;
+@bgColorFooter: #000;
+
+// Text colors
+@tcolorBody: #e6e6e6;
+@tColorFooter: #e6e6e6;
+
+// box-shadow color
+@box-shadowColor: #1a1a1a;
+
+// Mixins
+.box-style() {
+    box-shadow: 1px 1px 5px @box-shadowColor;
+    border-radius: 3px;
+}
+
+.site-logo-text,
+h1,
+h2 {
+    color: #f2c3a9;
+}
+
+a,
+a:visited {
+    color: #e6e6e6;
+}
+
+.region-flash img {
+    box-shadow: 0 -1px 5px #333, 0 1px 5px @box-shadowColor;
+}
+
+p code,
+table code {
+    background-color: #1a1a1a;
+}
+
+.author-byline,
+.wrap-sidebar .block {
+    .box-style;
+}
+
+.outer-wrap-footer {
+    box-shadow: 0 -1px 5px #000;
+}
