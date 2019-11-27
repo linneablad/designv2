@@ -41,7 +41,7 @@ För loggan *Rings of Sweden* används ett typsnitt med seriffer medan resten av
 ###Bentara
 [FIGURE src="image/bentara.png?w=600" caption="Bentaras webbplats"]
 
-Färgschemat är akromatiskt (svart, vit, grå) med två starka färger (guld och vinröd) vilka skulle kunna ingå i ett  tetradic färgschema.
+Färgschemat är akromatiskt (svart, vit, grå) med två starka färger (guld och vinröd) vilka skulle kunna ingå i ett analogt färgschema.
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -64,7 +64,7 @@ För loggan *Bentara*, rubriker och för menyn används ett typsnitt med seriffe
 
 [FIGURE src="image/hedbergs_guld_3.png?w=600"  caption="Hedbergs Gulds webbplats"]
 
-Färgschemat är akromatiskt (svart, vit, grå). Orange, guld och röd skulle kunna ingå i ett triadic färgschema men det är oklart var den mörkbruna färgen på footern passar in.
+Färgschemat är akromatiskt (svart, vit, grå). Orange, guld, mörkbrun och röd skulle kunna ingå i ett analogt färgschema.
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>

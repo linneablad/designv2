@@ -1,6 +1,15 @@
 Revision history
 ==================
 
+v4.0.0 (2019-11-28)
+--------------------
+
+* Added text for Redovisning kmom04
+* Created a minimalistic, colorful and dark theme
+* Created a base theme
+* Wrote the report for kmom04
+
+
 v3.0.0 (2019-11-21)
 --------------------
 
