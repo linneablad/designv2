@@ -100,4 +100,4 @@ George, James och Beaird Jason. 2014. *The Principles of Beautiful Web Design, 3
 
 Om rapporten
 -----------------------
-Den här rapporten har utförts och författats av Linnea Blad som en del av kursen *Teknisk webbdesign och användbarhet* på Blekinge Tekniska Högskola.
+Den här rapporten har utförts och författats av Linnea Blad den 23 november 2019 som en del av kursen *Teknisk webbdesign och användbarhet* på Blekinge Tekniska Högskola.

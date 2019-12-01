@@ -69,6 +69,11 @@ return [
                         "url" => "rapport/fargschema",
                         "title" => "Färgval för webbplatser inom smyckesbranschen",
                     ],
+                    [
+                        "text" => "Utvärdering av webbplatsers laddningstid och användbarhet",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Utvärdering av webbplatsers laddningstid och användbarhet",
+                    ],
                 ],
             ],
         ],
