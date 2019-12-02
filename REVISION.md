@@ -1,6 +1,14 @@
 Revision history
 ==================
 
+v5.0.0 (2019-12-04)
+--------------------
+
+* Added text for Redovisning kmom05
+* Created a blog for kmom05
+* Wrote the report for kmom05
+
+
 v4.0.0 (2019-11-28)
 --------------------
 
