@@ -93,6 +93,11 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Blogg",
+        ],
+        [
             "text" => "Lek",
             "url" => "test",
             "title" => "Lek runt i Markdown.",

@@ -5041,6 +5041,9 @@ template {
   float: right;
   margin-left: 0.5em;
 }
+.center {
+  text-align: center;
+}
 /* Byline */
 .author-byline {
   overflow: auto;
