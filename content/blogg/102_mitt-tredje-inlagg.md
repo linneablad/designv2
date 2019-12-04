@@ -13,7 +13,7 @@ Detta är en bild på en strand med stenhällar i Rotsidan, Höga kusten.
 
 <!--more-->
 
-Bilden togs i somras när jag och mina föräldrar åkte till Rotsidan i Höga kusten. Rotsidan är en 4 km lång sträcka längs kusten. Området kännetecknas av vidsträckta stenhällar som blivit slipade av havet i årtusenden
+Bilden togs i somras när jag och mina föräldrar åkte till Rotsidan i Höga kusten. Rotsidan är en 4 km lång sträcka längs kusten. Området kännetecknas av vidsträckta stenhällar som blivit slipade av havet i årtusenden.
 
 [FIGURE src="image/hoga_kusten.jpg" caption="Stenhällar vid Rotsidan i Höga kusten"]
 
