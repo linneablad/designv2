@@ -60,6 +60,35 @@ return [
             ],
         ],
         [
+            "text" => "Rapporter",
+            "url" => "rapport",
+            "title" => "Rapporter",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Färgval för webbplatser inom smyckesbranschen",
+                        "url" => "rapport/fargschema",
+                        "title" => "Färgval för webbplatser inom smyckesbranschen",
+                    ],
+                    [
+                        "text" => "Utvärdering av webbplatsers laddningstid och användbarhet",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Utvärdering av webbplatsers laddningstid och användbarhet",
+                    ],
+                    [
+                        "text" => "Utvärdering av designprinciper som webbplatser använder",
+                        "url" => "rapport/designprincip",
+                        "title" => "Utvärdering av designprinciper som webbplatser använder",
+                    ],
+                    [
+                        "text" => "Skapa tema med designelement",
+                        "url" => "rapport/designelement",
+                        "title" => "Skapa tema med designelement",
+                    ],
+                ],
+            ],
+        ],
+        [
             "text" => "Om",
             "url" => "om",
             "title" => "Om denna webbplats.",
@@ -73,6 +102,11 @@ return [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Blogg",
         ],
         [
             "text" => "Lek",

@@ -1,0 +1,235 @@
+/*!
+* Stylesheet for design kmom06 designelement.
+*
+* This stylesheet is for kmom06 where I use different designelements.
+*/
+
+/**
+ * Import mixins
+ */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+// Enable style from the module and optinally add customized layout
+@maxContentWidth: 775px;
+
+figure.figure {
+    @maxContentWidth: 775px;
+    #desinax-figure.figure(@maxContentWidth);
+}
+
+&.left,
+&.right {
+    @media screen {
+        @media (max-width: round(@maxContentWidth * 2 / 3)) {
+            &.w50 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @maxContentWidth * 2 / 3;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Import font-families */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/layout_kmom04.less";
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/base_kmom04.less";
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 18px; //16px;
+
+
+// Default font-families
+@fontFamilyLogo: 'Fredericka the Great', cursive;
+@fontFamilyHeadings: 'DM Serif Display', @fontFamilyGaramond;
+@fontFamilyBody: 'Roboto Condensed', @fontFamilyHelvetica;
+@fontFamilyCode: @fontFamilyCourier;
+
+
+// Background colors
+@bgColorHtml: #262626;
+@bgColorBody: #fff;
+@bgColorHeader: #f2c3a9;
+@bgColorBlock: #72879e;
+@bgColorFooter: #a1cf90;
+
+
+// Text colors
+@tcolorBody: #262626;
+@tColorFooter: #000;
+
+
+//Style
+.outer-wrap-header {
+    background-image: url("../image/background_header.png");
+    background-repeat: repeat;
+}
+
+.outer-wrap-footer {
+    background-image: url("../image/background_footer.png");
+    background-repeat: repeat;
+}
+
+article {
+    background-color: @bgColorBlock;
+    overflow: auto;
+    margin: 24px 0;
+    padding: 0 0.5em;
+}
+
+h1,
+h2 {
+    color: #000;
+}
+
+.rm-desktop li a::before,
+.rm-desktop li a::after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #000;
+    transition: all 0.3s;
+}
+
+.rm-desktop li a::before {
+    left: 0;
+    top: 0;
+}
+
+.rm-desktop li a::after {
+    right: 0;
+    bottom: 0;
+}
+
+.rm-desktop li a:hover::before,
+.rm-desktop li a:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.rm-desktop li a:hover {
+    text-decoration: none;
+}
+
+img,
+.region-flash img,
+.wrap-sidebar .block,
+.author-byline,
+.outer-wrap-footer {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+img {
+    border-radius: 50px;
+}
