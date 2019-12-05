@@ -74,6 +74,11 @@ return [
                         "url" => "rapport/laddningstid",
                         "title" => "Utvärdering av webbplatsers laddningstid och användbarhet",
                     ],
+                    [
+                        "text" => "Utvärdering av designprinciper som webbplatser använder",
+                        "url" => "rapport/designprincip",
+                        "title" => "Utvärdering av designprinciper som webbplatser använder",
+                    ],
                 ],
             ],
         ],
