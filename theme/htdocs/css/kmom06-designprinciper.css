@@ -1,7 +1,7 @@
 /*!
-* Stylesheet for design kmom04.
+* Stylesheet for design kmom06 designprinciples.
 *
-* This stylesheet is for the design course and kmom04 where we use LESS.
+* This stylesheet is for kmom06 where I use different designprinciples.
 */
 /**
  * Import mixins
@@ -10,27 +10,270 @@
  * A small clearfix:
  * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
  */
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 678px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 678.125px;
+  }
+}
+@media screen and (max-width: 517px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 516.66666667px;
+  }
+}
+@media screen and (max-width: 484px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 484.375px;
+  }
+}
+@media screen and (max-width: 388px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 387.5px;
+  }
+}
+@media screen and (max-width: 258px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 258.33333333px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .left.w50,
+  .right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .left.w50 img,
+  .right.w50 img {
+    width: 516.66666667px;
+  }
+}
 /* Import font-families */
 @font-face {
-  font-family: 'Parisienne';
+  font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Parisienne'), local('Parisienne-Regular'), url(https://fonts.gstatic.com/s/parisienne/v7/E21i_d3kivvAkxhLEVZpQyhwCg.ttf) format('truetype');
+  src: local('DM Serif Display Regular'), local('DMSerifDisplay-Regular'), url(https://fonts.gstatic.com/s/dmserifdisplay/v4/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx1w.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-xw.ttf) format('truetype');
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Bangers';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
 }
 /**
  * Normalize and reset the style.
@@ -4888,7 +5131,7 @@ template {
 /* Header */
 .outer-wrap-header,
 .rm-desktop ul li {
-  background-color: #75aebd;
+  background-color: #26315C;
 }
 .outer-wrap-header a {
   text-decoration: none;
@@ -4904,7 +5147,7 @@ template {
 .region-header-col-1 {
   font-size: 3em;
   padding: 12px 0 12px 12px;
-  font-family: 'Parisienne', Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font-family: 'Bangers', cursive;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -4985,11 +5228,12 @@ template {
   margin-left: 4.6875%;
 }
 .wrap-sidebar .block {
-  background-color: #fff;
+  background-color: #264D5C;
   padding: 0 0.5em;
   padding-bottom: 24px;
   box-shadow: 1px 2px 5px #888;
   border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .region-sidebar-left,
 .region-sidebar-right {
@@ -5049,15 +5293,16 @@ template {
   clear: both;
   margin: 0 0 24px;
   padding: 0.5em;
-  background-color: #fff;
+  background-color: #264D5C;
   max-width: 75%;
   box-shadow: 1px 2px 5px #888;
   border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 /* Footer */
 .outer-wrap-footer {
-  background-color: #192e34;
-  color: #cde0e4;
+  background-color: #26315C;
+  color: #dbdbde;
   padding: 24px 0;
   box-shadow: 0 -2px 5px #888;
 }
@@ -5078,10 +5323,10 @@ template {
 .outer-wrap-footer a,
 .outer-wrap-footer a:hover,
 .outer-wrap-footer a:visited {
-  color: #cde0e4;
+  color: #dbdbde;
 }
 .footer-column h4 {
-  border-bottom: 1px solid #cde0e4;
+  border-bottom: 1px solid #dbdbde;
 }
 /* Responsivity */
 @media screen and (max-width: 1100px) {
@@ -5390,15 +5635,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /* Mixins */
 html {
   overflow-y: scroll;
-  background-color: #1b2e32;
+  background-color: #262626;
 }
 body {
-  font-family: 'Raleway', 'Quicksand', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #eef5f6;
-  font: 18px/1.33333333 'Raleway', 'Quicksand', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #dbdbde;
+  background-color: #203246;
+  font: 18px/1.33333333 'Roboto Condensed', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 * {
   margin: 0;
@@ -5406,7 +5651,7 @@ body {
 }
 a,
 a:visited {
-  color: #333;
+  color: #dbdbde;
 }
 a:hover,
 a:visited:hover {
@@ -5433,7 +5678,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font-family: 'Bangers', Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5714,3 +5959,37 @@ hr::after {
 /**
  * My own settings, not currently in their own module.
  */
+body {
+  background-image: radial-gradient(circle at top left, #203246, #264d5c);
+}
+.region-flash img {
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  color: #b5b5b5;
+}
+h3,
+h4 {
+  color: #999;
+}
+.rm-desktop li a {
+  background: #2a3767;
+  border: 1px solid #20294e;
+  box-shadow: 0 2px 0 #1f274a, 2px 4px 6px #232d55;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+.rm-desktop li a:hover {
+  background: #242e57;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #41549d;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #181f3a;
+  transition: all 250ms linear;
+}
+.outer-wrap-footer {
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+}

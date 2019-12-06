@@ -2,11 +2,15 @@ Skapa tema med designelement
 =======================
 Syftet med uppgiften var att skapa ett tema till webbplatsen som anväder sig av en samling tongivande designelement.
 
-De designelement jag valde att jobba med var mönster, textur, figurer, streck och kontrast.
+De designelement jag valde att jobba med var mönster, rymd, textur, figurer, streck och kontrast.
 
 
 ###Mönster
 Jag lade till bakgrundsbilder som har ett mönster för headern och footern för att få lite mer liv i webbplatsen och för att undvika att den ser platt ut.
+
+
+###Rymd
+Jag har gjort en ganska luftig design. Det finns bland annat rymd mellan varje element och bestämda avstånd mellan rubriker och brödtext. Article elementet har en viss bredd vilket innebär att det blir mycket space på sidorna om man är på en stor skärm.
 
 
 ###Textur

@@ -1,7 +1,7 @@
 /*!
-* Stylesheet for design kmom06 designelement.
+* Stylesheet for design kmom06 designprinciples.
 *
-* This stylesheet is for kmom06 where I use different designelements.
+* This stylesheet is for kmom06 where I use different designprinciples.
 */
 
 /**
@@ -67,7 +67,7 @@ figure.figure {
 
 /* Import font-families */
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
 
 
@@ -148,90 +148,85 @@ figure.figure {
 
 
 // Default font-families
-@fontFamilyLogo: 'Fredericka the Great', cursive;
-@fontFamilyHeadings: 'DM Serif Display', @fontFamilyGaramond;
+@fontFamilyLogo: 'Bangers', cursive;
+@fontFamilyHeadings: 'Bangers', @fontFamilyGaramond;
 @fontFamilyBody: 'Roboto Condensed', @fontFamilyHelvetica;
 @fontFamilyCode: @fontFamilyCourier;
 
 
 // Background colors
 @bgColorHtml: #262626;
-@bgColorBody: #fff;
-@bgColorHeader: #f2c3a9;
-@bgColorBlock: #72879e;
-@bgColorFooter: #a1cf90;
+@bgColorBody: #203246; //#2C587A;
+@bgColorHeader: #26315C; //#2C2F7A;
+@bgColorBlock: #264D5C; //#293A63;
+@bgColorFooter: #26315C; //#2C2F7A;
 
 
 // Text colors
-@tColorBody: #000;
-@tColorFooter: #000;
+@tColorBody: #dbdbde;
+@tColorFooter: #dbdbde;
 
+
+//mixins
+.box-style() {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-top() {
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-bottom() {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gradient() {
+    background-image:
+    radial-gradient(
+        circle at top left,
+        #203246,
+        #264d5c
+    );
+}
 
 //Style
-.outer-wrap-header {
-    background-image: url("../image/background_header.png");
-    background-repeat: repeat;
+body {
+    .gradient();
 }
 
-.outer-wrap-footer {
-    background-image: url("../image/background_footer.png");
-    background-repeat: repeat;
+.region-flash img {
+    .box-shadow-top();
+    .box-shadow-bottom();
 }
 
-article {
-    background-color: @bgColorBlock;
-    overflow: auto;
-    margin: 24px 0;
-    padding: 0 0.5em;
+h2 {
+    color: #b5b5b5;
 }
 
-h1,
-h2,
 h3,
 h4 {
-    color: #000;
+    color: #999;
 }
 
-.rm-desktop li a::before,
-.rm-desktop li a::after {
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #000;
-    transition: all 0.3s;
-}
-
-.rm-desktop li a::before {
-    left: 0;
-    top: 0;
-}
-
-.rm-desktop li a::after {
-    right: 0;
-    bottom: 0;
-}
-
-.rm-desktop li a:hover::before,
-.rm-desktop li a:hover::after {
-    opacity: 1;
-    width: 100%;
+.rm-desktop li a {
+    background: lighten(@bgColorHeader, 3%);
+    border: 1px solid darken(@bgColorHeader, 4%);
+    box-shadow: 0 2px 0 darken(@bgColorHeader, 5%), 2px 4px 6px darken(@bgColorHeader, 2%);
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
 }
 
 .rm-desktop li a:hover {
+    background: darken(@bgColorHeader, 1.5%);
+    border: 1px solid rgba(#000, .05);
+    box-shadow: 1px 1px 2px rgba(#fff, .2);
+    color: lighten(@bgColorHeader, 18%);
     text-decoration: none;
+    text-shadow: -1px -1px 0 darken(@bgColorHeader, 9.5%);
+    transition: all 250ms linear;
 }
 
-img,
-.region-flash img,
-.wrap-sidebar .block,
-.author-byline,
 .outer-wrap-footer {
-    box-shadow: none;
-    border-radius: 0;
-}
-
-img {
-    border-radius: 50px;
+    .box-shadow-top();
 }

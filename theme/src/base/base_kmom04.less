@@ -5,7 +5,7 @@
 /* Variables */
 @bgColorHtml: #1b2e32;
 @bgColorBody: #eef5f6;
-@tcolorBody: #333;
+@tColorBody: #333;
 @fontFamilyBody: 'Raleway', 'Quicksand', @fontFamilyHelvetica;
 
 /* Mixins */
@@ -23,7 +23,7 @@ body {
     font-family: @fontFamilyBody;
     margin: 0;
     padding: 0;
-    color: @tcolorBody;
+    color: @tColorBody;
     background-color: @bgColorBody;
     // Activate the grid base font
     #desinax-hgrid.font(@fontSizeBody);
@@ -37,7 +37,7 @@ body {
 
 a,
 a:visited {
-    color: black;
+    color: @tColorBody;
 
     &:hover {
         text-decoration: none;

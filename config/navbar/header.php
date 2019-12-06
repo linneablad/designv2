@@ -84,6 +84,11 @@ return [
                         "url" => "rapport/designelement",
                         "title" => "Skapa tema med designelement",
                     ],
+                    [
+                        "text" => "Skapa tema enligt designprinciper",
+                        "url" => "rapport/designprinciper",
+                        "title" => "Skapa tema enligt designprinciper",
+                    ],
                 ],
             ],
         ],
