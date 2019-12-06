@@ -31,7 +31,7 @@ De färger jag använder ingår i ett triadiskt färgschema vilket ger kontraste
 
 Referenser
 -----------------------
-George, James och Beaird Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
+George, James och Beaird, Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
 
 Stribley, Mary. *Design Elements & Principles*. Canva. [https://www.canva.com/learn/design-elements-principles/](https://www.canva.com/learn/design-elements-principles/) (hämtad 2019-12-05)
 

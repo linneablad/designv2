@@ -12,7 +12,7 @@ Den första webbplatsen var [Brothers](https://www.brothers.se/), den andra var 
 
 Metod
 -----------------------
-Webbplatserna undersöktes utifrån hur de använder designprinciperna kontrast, perspektiv och enhetlighet. Som källor användes boken *The Principles of Beautiful Web Design, 3rd Edition* av George, James och Beaird Jason samt youtube videon [Art Principles](https://youtu.be/eapeL2fwdc8) av ArtOfTeaching.
+Webbplatserna undersöktes utifrån hur de använder designprinciperna kontrast, perspektiv och enhetlighet. Som källor användes boken *The Principles of Beautiful Web Design, 3rd Edition* av George, James och Beaird, Jason samt youtube videon [Art Principles](https://youtu.be/eapeL2fwdc8) av ArtOfTeaching.
 
 
 Resultat
@@ -50,7 +50,7 @@ Alla tre webbplatserna använder designprinciperna kontrast, perspektiv och enhe
 
 Referenser
 -----------------------
-George, James och Beaird Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
+George, James och Beaird, Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
 
 ArtOfTeaching. 2012. *Art Principles*. [online]. [https://youtu.be/eapeL2fwdc8](https://youtu.be/eapeL2fwdc8) (Hämtad 2019-12-04)
 

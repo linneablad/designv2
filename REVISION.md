@@ -1,6 +1,16 @@
 Revision history
 ==================
 
+
+v6.0.0 (2019-12-09)
+--------------------
+
+* Added text for Redovisning kmom06
+* Designprinciples theme and report
+* Designelements theme and report
+* Wrote the report for kmom06
+
+
 v5.0.0 (2019-12-04)
 --------------------
 

@@ -28,7 +28,7 @@ Referenser
 -----------------------
 ArtOfTeaching. 2012. *Art Principles*. [online]. [https://youtu.be/eapeL2fwdc8](https://youtu.be/eapeL2fwdc8) (Hämtad 2019-12-06)
 
-George, James och Beaird Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
+George, James och Beaird, Jason. 2014. *The Principles of Beautiful Web Design, 3rd Edition*. SitePoint.
 
 Stribley, Mary. *Design Elements & Principles*. Canva. [https://www.canva.com/learn/design-elements-principles/](https://www.canva.com/learn/design-elements-principles/) (hämtad 2019-12-06)
 
