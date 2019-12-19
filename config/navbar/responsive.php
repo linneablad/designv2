@@ -90,6 +90,11 @@ return [
                         "url" => "rapport/designprinciper",
                         "title" => "Skapa tema enligt designprinciper",
                     ],
+                    [
+                        "text" => "Analys aktuell webbplatsdesign",
+                        "url" => "rapport/webbplatsdesign",
+                        "title" => "Analys aktuell webbplatsdesign",
+                    ],
                 ],
             ],
         ],
