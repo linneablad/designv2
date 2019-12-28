@@ -2,6 +2,13 @@ Revision history
 ==================
 
 
+v10.0.0 (2019-12-26)
+--------------------
+
+* Added text for Redovisning kmom10
+* Wrote the report for kmom10
+
+
 v6.0.0 (2019-12-09)
 --------------------
 
